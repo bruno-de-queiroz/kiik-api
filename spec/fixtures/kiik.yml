@@ -1,6 +1,6 @@
-:token: "d93bdf60292bdb7dfab02c47d2a1de75"
+:token: "098f6bcd4621d373cade4e832627b4f6"
 :wallet:
-  :name: "JudicePay"
-  :api_id: "JUPA"
-  :api_secret: "dIBZhUs2f1+b57L9Bg5wG4LqEj7ZiBWwBo+zBjAW+r0="
-  :email: "account-judicepay@incube.mobi"
+  :name: "Wallet Application"
+  :api_id: "WALT"
+  :api_secret: "b5i32od62d5hadxvopcgsdmipv2g8b"
+  :email: "no-reply@wallet.com.br"
