@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.date = "2012-12-24"
   s.description = "A Gem for Kiik API"
   s.email = "creativelikeadog@gmail.com"
- 
+
   s.files         = `git ls-files`.split($\)
   s.executables   = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/creativelikeadog/kiik"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "0.0.1"
+  s.rubygems_version = "0.1.0"
   s.summary = "A Gem for Kiik API"
 
   s.add_dependency "hashie"
