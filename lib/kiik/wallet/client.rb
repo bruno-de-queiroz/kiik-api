@@ -93,9 +93,9 @@ module Kiik
 				response = @wallet.client.request(verb, "/#{@wallet.version}#{uri}", request_params(params))
 
 				if block_given?
-					yield(response.body)
+					yield(response.parsed)
 				else
-					response.body
+					response.parsed
 				end
 			end
 
