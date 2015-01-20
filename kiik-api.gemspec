@@ -16,12 +16,11 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
 
   s.files = [
-    ".bundle/config",
     "Manifest",
-    "README",
+    "README.md",
     "Rakefile",
-    "kiik.gemspec",
-    "lib/kiik.rb",
+    "kiik-api.gemspec",
+    "lib/kiik-api.rb",
     "lib/kiik/cacert.pem",
     "lib/kiik/client.rb",
     "lib/kiik/errors.rb",
@@ -33,9 +32,9 @@ Gem::Specification.new do |s|
     "lib/kiik/wallet/creditcard.rb",
     "lib/kiik/wallet/transaction.rb",
     "lib/kiik/wallet/user.rb",
-    "specs/lib/kiik/wallet_client_spec.rb",
-    "specs/lib/kiik/wallet_client_user_spec.rb",
-    "specs/spec_helper.rb"
+    "spec/lib/kiik/wallet_client_spec.rb",
+    "spec/lib/kiik/wallet_client_user_spec.rb",
+    "spec/spec_helper.rb"
 
   ]
   s.homepage = "http://github.com/creativelikeadog/kiik-api"
