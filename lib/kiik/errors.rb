@@ -6,9 +6,6 @@ module Kiik
 	class NoAuthorizationTokenProvided < Exception 
 	end
 
-	class RequireAuthorizationToken < Exception
-	end
-
   class TypeNotSupported < Exception
   end
 

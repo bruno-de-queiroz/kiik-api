@@ -5,7 +5,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require 'kiik'
+require 'kiik-api'
 begin
   require 'redgreen'
 rescue LoadError

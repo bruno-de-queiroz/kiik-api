@@ -34,7 +34,6 @@ module Kiik
 
 			private
 				def request(token,verb,url,params,&block)
-					raise RequireAuthorizationToken if token.nil?
 					@client.use_token(token, Proc.new { |client| client.request(verb,url,params,&block) })
 				end
 

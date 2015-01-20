@@ -2,7 +2,7 @@
 require File.expand_path('../lib/kiik/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = "kiik"
+  s.name = "kiik-api"
   s.version = Kiik::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     "specs/spec_helper.rb"
 
   ]
-  s.homepage = "http://github.com/creativelikeadog/kiik"
+  s.homepage = "http://github.com/creativelikeadog/kiik-api"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "0.1.0"
