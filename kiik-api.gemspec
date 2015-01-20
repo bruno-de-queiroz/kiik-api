@@ -43,20 +43,20 @@ Gem::Specification.new do |s|
   s.rubygems_version = Kiik::VERSION
   s.summary = "A Gem for Kiik API"
 
-  s.add_dependency "activesupport", "~> 4.1", ">= 4.1.8"
-  s.add_dependency "hashie", "~> 3.3", ">= 3.3.2"
-  s.add_dependency "faraday", "~> 0.9", ">= 0.9.1"
-  s.add_dependency "json", "~> 1.8", ">= 1.8.0"
-  s.add_dependency "i18n", "~> 0.7", ">= 0.7.0"
-  s.add_dependency "rake", "~> 10.4", ">= 10.4.2"
+  s.add_dependency "activesupport", "~> 4.1"
+  s.add_dependency "hashie", "~> 3.3"
+  s.add_dependency "faraday", "~> 0.9"
+  s.add_dependency "json", "~> 1.8"
+  s.add_dependency "i18n", "~> 0.7"
+  s.add_dependency "rake", "~> 10.4"
   s.add_dependency "bundler", "~> 1.0"
-  s.add_dependency "fakeweb", "~> 1.3", ">= 1.3.0"
-  s.add_dependency "rspec", "~> 3.0", ">= 3.0.0"
-  s.add_dependency "simplecov", "~> 0.9", ">= 0.9.1"
+  s.add_dependency "fakeweb", "~> 1.3"
+  s.add_dependency "rspec", "~> 3.0"
+  s.add_dependency "simplecov", "~> 0.9"
   s.add_dependency "rdoc", "~> 4.0"
-  s.add_dependency "multi_json", "~> 1.3", ">= 1.3.0"
-  s.add_dependency "multi_xml", "~> 0.5", ">= 0.5.5"
-  s.add_dependency "rack", "~> 1.5", ">= 1.5.2"
+  s.add_dependency "multi_json", "~> 1.3"
+  s.add_dependency "multi_xml", "~> 0.5"
+  s.add_dependency "rack", "~> 1.5"
 
 end
 
