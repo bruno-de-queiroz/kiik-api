@@ -37,14 +37,3 @@ module Kiik
 
   end
 end
-
-# :nodoc: undo the clusterfuck that rest-client has done
-if Net::HTTP.method_defined? :__request__
-  module Net
-    class HTTP
-      undef request
-      alias request __request__
-    end
-  end
-end
-

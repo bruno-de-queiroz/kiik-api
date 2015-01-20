@@ -3,7 +3,6 @@ README.md
 Rakefile
 kiik-api.gemspec
 lib/kiik-api.rb
-lib/kiik/cacert.pem
 lib/kiik/client.rb
 lib/kiik/errors.rb
 lib/kiik/logger.rb

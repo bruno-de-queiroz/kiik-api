@@ -38,7 +38,7 @@ module Kiik
 
   def self.load_config
     unless File.file?(config_path)
-      raise NotConfigured.new("The #{file} config file is missing.")
+      raise NotConfigured.new("The #{config_path} config file is missing.")
     end
  
     cfg = YAML.load_file(config_path)

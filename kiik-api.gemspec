@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/kiik/version', __FILE__)
+require File.expand_path("../lib/kiik/version", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = "kiik-api"
@@ -43,19 +43,20 @@ Gem::Specification.new do |s|
   s.rubygems_version = "0.1.0"
   s.summary = "A Gem for Kiik API"
 
-  s.add_dependency "hashie"
-  s.add_dependency "faraday"
-  s.add_dependency "json"
-  s.add_dependency "i18n"
-  s.add_dependency "rake"
-  s.add_dependency "bundler"
-  s.add_dependency "fakeweb"
-  s.add_dependency "rspec"
-  s.add_dependency "simplecov"
-  s.add_dependency "rdoc"
-  s.add_dependency 'multi_json'
-  s.add_dependency 'multi_xml'
-  s.add_dependency 'rack'
+  s.add_dependency "activesupport", "= 4.1.8"
+  s.add_dependency "hashie", "= 3.3.2"
+  s.add_dependency "faraday", "= 0.9.1"
+  s.add_dependency "json", "= 1.8.2"
+  s.add_dependency "i18n", "= 0.7.0"
+  s.add_dependency "rake", "= 10.4.2"
+  s.add_dependency "bundler", "~> 1.0"
+  s.add_dependency "fakeweb", "= 1.3.0"
+  s.add_dependency "rspec", "~> 3.0", ">= 3.0.0"
+  s.add_dependency "simplecov", "= 0.9.1"
+  s.add_dependency "rdoc", "~> 4.0"
+  s.add_dependency "multi_json", "= 1.3.0"
+  s.add_dependency "multi_xml", "= 0.5.5"
+  s.add_dependency "rack", "= 1.6.0"
 
 end
 
