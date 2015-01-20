@@ -21,7 +21,7 @@ require 'kiik/wallet/creditcard'
 
 module Kiik
   # set a default
-  @config_path = defined?(Rails) ? File.join(Rails.root , 'config' , 'kiik.yml') : 'kiik.yml'
+  @config_path = 'kiik.yml'
 
   class << self  
     attr_accessor :config_path
@@ -37,6 +37,10 @@ module Kiik
   end
 
   def self.load_config
+    if defined?(Rails)
+      config_path = Rails.root.join('config','kiik.yml')
+    end
+
     unless File.file?(config_path)
       raise NotConfigured.new("The #{config_path} config file is missing.")
     end
