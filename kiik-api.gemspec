@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.add_dependency "activesupport", "= 4.1.8"
   s.add_dependency "hashie", "= 3.3.2"
   s.add_dependency "faraday", "= 0.9.1"
-  s.add_dependency "json", "= 1.8.2"
+  s.add_dependency "json", "~> 1.8.0"
   s.add_dependency "i18n", "= 0.7.0"
   s.add_dependency "rake", "= 10.4.2"
   s.add_dependency "bundler", "~> 1.0"
@@ -56,7 +56,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rdoc", "~> 4.0"
   s.add_dependency "multi_json", "= 1.3.0"
   s.add_dependency "multi_xml", "= 0.5.5"
-  s.add_dependency "rack", "= 1.6.0"
+  s.add_dependency "rack", "~> 1.5.2"
 
 end
 
