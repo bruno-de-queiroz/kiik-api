@@ -16,10 +16,6 @@ describe Kiik do
         expect(wallet.user).not_to be_nil
       end
 
-       it 'should login a user' do
-        expect(wallet.user.login(:id => 'test-test-3', :password => '12345123')).to include("token")
-      end
-
     end
 
   end

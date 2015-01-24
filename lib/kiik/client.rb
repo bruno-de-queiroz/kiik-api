@@ -42,6 +42,8 @@ module Kiik
 
       url = connection.build_url(url, opts[:params]).to_s
       
+      Kiik::Logger.info(url)
+
       response = connection.run_request(verb, url, opts[:body], authorization_header(opts[:headers])) do |req|
         yield(req) if block_given?
       end

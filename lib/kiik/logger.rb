@@ -1,15 +1,20 @@
 module Kiik
 	class Logger
     def self.info(msg)
-      puts msg
+      puts "Kiik::INFO: #{msg}"
     end
 
     def self.warn(msg)
-      puts msg
+      puts "Kiik::WARN: #{msg}"
     end
 
     def self.error(msg)
-      puts msg
+      puts "Kiik::ERROR: #{msg}"
+    end
+
+    def self.inspect(msg)
+      puts "Kiik::INSPECT:"
+      p msg
     end
 
   end

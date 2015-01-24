@@ -18,10 +18,10 @@ require 'kiik/wallet'
 require 'kiik/wallet/client'
 require 'kiik/wallet/user'
 require 'kiik/wallet/creditcard'
+require 'kiik/wallet/transaction'
 
 module Kiik
   # set a default
-  @config_path = 'kiik.yml'
 
   class << self  
     attr_accessor :config_path
@@ -36,9 +36,14 @@ module Kiik
     @wallet.api
   end
 
-  def self.load_config
-    if defined?(Rails)
-      config_path = Rails.root.join('config','kiik.yml')
+  def self.load_config  
+    
+    if @config_path.nil?
+      if defined?(Rails)
+        @config_path = Rails.root.join('config','kiik.yml')
+      else
+        @config_path = 'kiik.yml'
+      end
     end
 
     unless File.file?(config_path)
