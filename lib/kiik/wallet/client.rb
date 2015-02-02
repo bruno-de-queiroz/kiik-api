@@ -31,8 +31,11 @@ module Kiik
 
 	    def use_token(new_token,&block)
 	      @wallet.client.token = new_token
-	      block.call(self)
-	      @wallet.client.token =  @wallet.token
+	      begin
+	      	block.call(self)
+	      ensure
+	      	@wallet.client.token =  @wallet.token
+	      end
 	    end
 
 			def detail(type,options={},&block)
