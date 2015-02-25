@@ -1,5 +1,5 @@
 module Kiik
-	class Logger
+  class Logger
     def self.info(msg)
       puts "Kiik::INFO: #{msg}"
     end

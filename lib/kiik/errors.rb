@@ -1,10 +1,10 @@
 module Kiik
-	
-	class NotConfigured < Exception 
-	end
-	
-	class NoAuthorizationTokenProvided < Exception 
-	end
+
+  class NotConfigured < Exception
+  end
+
+  class NoAuthorizationTokenProvided < Exception
+  end
 
   class TypeNotSupported < Exception
   end
@@ -12,7 +12,7 @@ module Kiik
   class MethodNotAllowedForType < Exception
   end
 
-	class Error < StandardError
+  class Error < StandardError
     attr_reader :response, :code, :description
 
     # standard error values include:

@@ -1,12 +1,12 @@
 module Kiik
 
-	class Wallet
+  class Wallet
     attr_reader :token, :site, :version
     attr_accessor :logger, :options
 
     def initialize(token,options={})
-      @site = 'https://wallet.kiik.com.br'
-      @version = 'v1'
+      @site = options.delete(:url) || 'https://wallet.kiik.com.br'
+      @version = options.delete(:version) || 'v1'
       @token = token
       @ca_file = options.delete(:ca_file) || default_ca_file
       @logger = options.delete(:logger) || Kiik::Logger

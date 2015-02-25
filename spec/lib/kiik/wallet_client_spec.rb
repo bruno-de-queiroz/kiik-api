@@ -1,8 +1,8 @@
 require "spec_helper"
 
 describe Kiik do
-  
-  
+
+
   context 'initialization' do
 
     before(:each) do
@@ -50,6 +50,6 @@ describe Kiik do
     end
 
   end
-  
+
 
 end

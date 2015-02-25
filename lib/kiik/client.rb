@@ -2,10 +2,10 @@ module Kiik
 
   class Client
 
-		attr_reader :site
+    attr_reader :site
     attr_accessor :token, :options
 
-		def initialize(token, options={}, &block)
+    def initialize(token, options={}, &block)
       opts = options.dup
       @token = token
       @site = opts.delete(:site)
@@ -15,7 +15,7 @@ module Kiik
                   :max_redirects    => 5,
                   :raise_errors     => true}.merge(opts)
       @options[:connection_opts][:ssl] = ssl if ssl
-		end
+    end
 
     def site=(value)
       @connection = nil
@@ -41,7 +41,7 @@ module Kiik
       connection.response :logger, ::Logger.new($stdout) if ENV['OAUTH_DEBUG'] == 'true'
 
       url = connection.build_url(url, opts[:params]).to_s
-      
+
       Kiik::Logger.info(url)
 
       response = connection.run_request(verb, url, opts[:body], authorization_header(opts[:headers])) do |req|
