@@ -6,6 +6,10 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require 'kiik-api'
+require 'factory_girl'
+
+require_relative './factories.rb'
+
 begin
   require 'redgreen'
 rescue LoadError
@@ -21,6 +25,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+  config.include FactoryGirl::Syntax::Methods
 end
 
 

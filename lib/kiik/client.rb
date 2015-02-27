@@ -45,8 +45,12 @@ module Kiik
       Kiik::Logger.info(url)
 
       response = connection.run_request(verb, url, opts[:body], authorization_header(opts[:headers])) do |req|
+        Kiik::Logger.inspect(req)
         yield(req) if block_given?
       end
+
+      Kiik::Logger.inspect(response)
+
       response = Response.new(response, :parse => opts[:parse])
 
       case response.status

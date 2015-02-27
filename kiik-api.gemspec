@@ -57,6 +57,7 @@ Gem::Specification.new do |s|
   s.add_dependency "multi_json", "~> 1.3"
   s.add_dependency "multi_xml", "~> 0.5"
   s.add_dependency "rack", "~> 1.5"
+  s.add_dependency "factory_girl", "~> 4.0"
 
 end
 

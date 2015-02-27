@@ -2,7 +2,6 @@ require "spec_helper"
 
 describe Kiik do
 
-
   context 'initialization' do
 
     before(:each) do
@@ -45,11 +44,8 @@ describe Kiik do
         expect(wallet.client.authorization_header({})['Authorization']).to eq('Token token=098f6bcd4621d373cade4e832627b4f6')
       end
 
-
-
     end
 
   end
-
 
 end
